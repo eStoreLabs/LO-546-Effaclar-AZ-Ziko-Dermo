@@ -248,16 +248,16 @@ body {
 }
 #es-rc #es-rc-content .es-cross__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 24px;
 }
 #es-rc #es-rc-content .es-cross__single {
   display: flex;
   flex-flow: column;
   margin: 15px auto;
-  width: 190px;
+  width: 200px;
   transition: transform 0.6s;
 }
 #es-rc #es-rc-content .es-cross__single:hover .es-cross__single--img img {
@@ -266,15 +266,6 @@ body {
 #es-rc #es-rc-content .es-cross__single:hover .es-cross__single--link {
   color: #000;
   background-color: #fff;
-}
-#es-rc #es-rc-content .es-cross__single:nth-child(2) .es-cross__single--img img {
-  max-height: 230px;
-}
-#es-rc #es-rc-content .es-cross__single:nth-child(4) .es-cross__single--img img {
-  max-height: 230px;
-}
-#es-rc #es-rc-content .es-cross__single:nth-child(5) .es-cross__single--img img {
-  max-height: 230px;
 }
 #es-rc #es-rc-content .es-cross__single--img img {
   max-height: 250px;
@@ -289,10 +280,6 @@ body {
   padding-left: 5px;
   font-size: 14px;
 }
-#es-rc #es-rc-content .es-blue-text {
-  color: #007470;
-  text-transform: uppercase;
-}
 #es-rc #es-rc-content .es-cross__single--link {
   background-color: #000;
   color: #fff;
@@ -302,8 +289,11 @@ body {
   border: #000 1px solid;
   border-radius: 5px;
   padding: 10px 0;
-  width: 95%;
   transition: all 0.3s ease-in-out;
+}
+#es-rc #es-rc-content .es-blue-text {
+  color: #007470;
+  text-transform: uppercase;
 }
 #es-rc #es-rc-content .es-cross-mobile {
   display: block;
@@ -583,14 +573,6 @@ body {
   background-color: #007470;
 }
 
-/* === Small Screens === */
-@media (min-width: 576px) {
-  #es-rc #es-rc-content .es-research--left {
-    width: 50%;
-    margin: unset;
-    padding: unset;
-  }
-}
 /* === Responsive Header === */
 @media (min-width: 600px) {
   #es-rc #es-rc-content .es-kv__container {
@@ -687,6 +669,11 @@ body {
   }
   #es-rc #es-rc-content .es-cross {
     display: block;
+  }
+}
+@media (min-width: 890px) {
+  #es-rc #es-rc-content .es-cross__container {
+    justify-content: space-between;
   }
 }
 /* === Swiper toggle === */
