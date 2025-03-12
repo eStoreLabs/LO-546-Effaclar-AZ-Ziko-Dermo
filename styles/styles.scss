@@ -485,12 +485,22 @@ body {
         margin-top: 20px;
         padding: 25px;
         text-transform: uppercase;
-        color: $es-color_1;
+        color: $es-color_3;
         background-color: $es-color_2;
-        font-size: 24px;
+        min-width: 260px;
+        width: 100%;
+        max-width: 320px;
 
-        &>p>span:last-of-type {
-          font-size: 12px;
+        &--1 {
+          font-size: 32px;
+        }
+
+        &--2 {
+          font-size: 24px;
+        }
+
+        &--3 {
+          font-size: 18px;
         }
       }
     }
@@ -511,10 +521,6 @@ body {
       .swiper-button-next {
         top: 17%;
       }
-    }
-
-    .es-orange-text {
-      color: $es-color_4;
     }
 
     .es-white-text {
@@ -872,15 +878,6 @@ body {
   }
 }
 
-@media (min-width: 890px) {
-  #es-rc #es-rc-content {
-    .es-cross {
-      &__container {
-        justify-content: space-between;
-      }
-    }
-  }
-}
 
 
 /* === Swiper toggle === */
