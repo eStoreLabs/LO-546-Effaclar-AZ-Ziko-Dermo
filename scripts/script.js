@@ -26,7 +26,7 @@ for (let i = 0; i < accTab.length; i++) {
 const baseWrapperSelector = '#es-rc #es-rc-content';
 
 const swiper1Wrapper = baseWrapperSelector + ' .es-cross-mobile';
-const swiper1Selector = swiper1Wrapper + ' .es-swiper1';
+const swiper1Selector = swiper1Wrapper + ' .es-swiper--1';
 const swiper1 = new Swiper(swiper1Selector, {
   direction: 'horizontal',
   loop: true,
