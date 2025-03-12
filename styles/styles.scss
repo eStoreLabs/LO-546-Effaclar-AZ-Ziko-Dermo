@@ -1,11 +1,10 @@
-$color_1: #fff;
-$color_2: #013e93;
-$color_3: #000;
-$color_4: #013e93;
-$color_5: #f07d00;
+$es-color_1: #fff;
+$es-color_2: #007470;
+$es-color_3: #000;
+$es-color_4: #f07d00;
 $font-family_1: "Montserrat", sans-serif;
-$background-color_5: #F2F2F2;
-$background-color_6: #f4f4f4;
+$es-background-color_5: #F2F2F2;
+$es-background-color_6: #f4f4f4;
 
 body {
   margin-top: 0;
@@ -76,7 +75,7 @@ body {
       display: flex;
       flex-direction: column;
       position: relative;
-      background-color: $color_3;
+      background-color: $es-color_3;
     }
 
     .es-kv__text--left {
@@ -88,7 +87,7 @@ body {
 
       font-size: 25px;
       text-transform: uppercase;
-      color: $color_1;
+      color: $es-color_1;
     }
 
     .es-kv__text--right {
@@ -100,7 +99,7 @@ body {
 
       font-size: 25px;
       text-transform: uppercase;
-      color: $color_1;
+      color: $es-color_1;
 
       & p:first-of-type {
         padding: 8px 4px;
@@ -313,8 +312,8 @@ body {
         }
 
         .es-cross__single--link {
-          color: $color_3;
-          background-color: $color_1;
+          color: $es-color_3;
+          background-color: $es-color_1;
         }
       }
 
@@ -362,13 +361,13 @@ body {
     }
 
     .es-blue-text {
-      color: $color_2;
+      color: $es-color_2;
       text-transform: uppercase;
     }
 
     .es-cross__single--link {
-      background-color: $color_3;
-      color: $color_1;
+      background-color: $es-color_3;
+      color: $es-color_1;
       font-size: 14px;
       text-transform: uppercase;
       text-align: center;
@@ -430,7 +429,7 @@ body {
       &::after {
         font-size: 22px;
         font-weight: 900;
-        color: $color_4;
+        color: $es-color_2;
       }
     }
 
@@ -442,7 +441,7 @@ body {
       &::after {
         font-size: 22px;
         font-weight: 900;
-        color: $color_4;
+        color: $es-color_2;
       }
     }
 
@@ -495,8 +494,8 @@ body {
         margin-top: 20px;
         padding: 25px;
         text-transform: uppercase;
-        color: $color_1;
-        background-color: $color_4;
+        color: $es-color_1;
+        background-color: $es-color_2;
         font-size: 24px;
 
         & > p > span:last-of-type {
@@ -534,16 +533,16 @@ body {
       &::after {
         font-size: 22px;
         font-weight: 900;
-        color: $color_1;
+        color: $es-color_1;
       }
     }
 
     .es-orange-text {
-      color: $color_5;
+      color: $es-color_4;
     }
 
     .es-white-text {
-      color: $color_1;
+      color: $es-color_1;
     }
 
     .es-small-text {
@@ -557,7 +556,7 @@ body {
     .es-table__title {
       font-weight: 900;
       font-size: 30px;
-      color: $color_4;
+      color: $es-color_2;
       text-align: center;
       text-transform: uppercase;
       margin: 25px 0;
@@ -570,7 +569,7 @@ body {
 
     .es-table__single {
       text-align: center;
-      background-color: $background-color_5;
+      background-color: $es-background-color_5;
       padding: 25px;
       width: 32.5%;
 
@@ -617,7 +616,7 @@ body {
       &::after {
         font-size: 22px;
         font-weight: 900;
-        color: $color_4;
+        color: $es-color_2;
       }
     }
 
@@ -629,7 +628,7 @@ body {
       &::after {
         font-size: 22px;
         font-weight: 900;
-        color: $color_4;
+        color: $es-color_2;
       }
     }
 
@@ -639,7 +638,7 @@ body {
     }
 
     .es-duo--left {
-      color: $color_1;
+      color: $es-color_1;
       font-size: 18px;
       text-transform: uppercase;
 
@@ -650,7 +649,7 @@ body {
 
     .es-duo--left--title {
       font-weight: bold;
-      color: $color_5;
+      color: $es-color_4;
     }
 
     .es-duo__percent {
@@ -697,7 +696,7 @@ body {
             bottom: 5%;
             left: 5%;
             text-transform: uppercase;
-            color: $color_1;
+            color: $es-color_1;
 
             .es-bold {
               font-weight: 700;
@@ -723,8 +722,8 @@ body {
       .es-accordion__element-content {
         font-size: 16px;
         line-height: 1.4;
-        background-color: $background-color_6;
-        color: $color_3;
+        background-color: $es-background-color_6;
+        color: $es-color_3;
         overflow: hidden;
         margin-top: -10px;
         padding-left: 20px;
@@ -739,10 +738,10 @@ body {
         width: 100%;
         padding: 17px 50px 17px 15px;
         font-size: 20px;
-        color: $color_1;
+        color: $es-color_1;
         transition: all 200ms ease-out;
         cursor: pointer;
-        background-color: #013e93;
+        background-color: $es-color_2;
         z-index: 1;
         position: relative;
       }
@@ -790,7 +789,7 @@ body {
     .es-crosss__single--text--border {
       width: 18px;
       height: 51px;
-      background-color: $color_2;
+      background-color: $es-color_2;
     }
   }
 }
@@ -957,7 +956,7 @@ body {
         justify-content: flex-end;
         align-items: flex-start;
 
-        background-color: $color_4;
+        background-color: $es-color_2;
 
         .es-products__single--img {
           margin-left: 20px;
