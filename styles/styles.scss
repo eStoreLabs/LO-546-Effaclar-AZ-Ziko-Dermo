@@ -268,32 +268,44 @@ body {
       }
     }
 
-    .es-research__container {
-      display: flex;
-      flex-wrap: wrap;
-    }
 
     .es-research {
       width: 100%;
-      padding: 107px 50px;
-      margin-top: 60px;
+      padding: 50px;
+      margin-top: 50px;
+
+      &__wrapper {
+        width: 100%;
+        max-width: 600px;
+        color: $es-color_1;
+      }
+
+      &__title {
+        font-size: 36px;
+        font-weight: 900;
+        text-transform: uppercase;
+
+        span {
+          font-weight: 400;
+        }
+      }
+
+      &__list {
+        margin-block: 24px;
+        font-size: 18px;
+        line-height: 1.3;
+      }
+
+      &__list--single {
+        display: grid;
+        grid-template-columns: 30px auto;
+      }
+
+      &__text {
+        font-size: 18px;
+      }
     }
 
-    .es-research--left {
-      width: 100%;
-      max-width: 600px;
-      margin: 0 auto;
-      text-transform: uppercase;
-    }
-
-    .es-research--left--title {
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .es-research--left--text {
-      font-size: 18px;
-    }
 
     .es-cross {
       display: none;
