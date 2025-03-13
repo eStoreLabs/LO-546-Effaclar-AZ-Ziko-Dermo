@@ -1,10 +1,11 @@
 $es-color_1: #fff;
 $es-color_2: #007470;
 $es-color_3: #000;
-$es-color_4: #f07d00;
+$es-color_4: #00a69a;
 $font-family_1: "Montserrat", sans-serif;
 $es-background-color_5: #F2F2F2;
 $es-background-color_6: #f4f4f4;
+$max-width: 1200px;
 
 body {
   margin-top: 0;
@@ -87,6 +88,38 @@ body {
       }
     }
 
+    .es-kv {
+      color: $es-color_1;
+      text-transform: uppercase;
+      padding: 25px;
+
+      &__right {
+        max-width: calc($max-width / 3);
+        margin-left: auto;
+      }
+
+      &__highlight {
+        background-color: $es-color_4;
+        font-weight: 600;
+        max-width: max-content;
+        padding: 4px 8px;
+      } 
+      &__heading {
+        font-size: 28px;
+        line-height: 1;
+        margin: 10px 0 20px 0;
+        span {
+          font-weight: 600;
+        }
+      }
+      &__text--big-bold {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      &__list {
+        font-size: 13px;
+      }
+    }
 
     .es-benefits {
       margin-top: 70px;
@@ -137,7 +170,7 @@ body {
 
     .es-research {
       width: 100%;
-      padding: 50px;
+      padding: 25px;
       margin-top: 50px;
 
       &__wrapper {
@@ -572,6 +605,23 @@ body {
 
   #es-rc #es-rc-content {
 
+    .es-kv {
+      padding: 50px;
+      min-height: 300px;
+      &__highlight {
+        font-size: 18px;
+      }
+      &__heading {
+        font-size: 50px;
+      }
+      &__text--big-bold {
+        font-size: 25px;
+      }
+      &__list {
+        font-size: 20px;
+      }
+    }
+
     .es-benefits {
       .es-benefits__title {
         font-size: 40px;
@@ -588,6 +638,7 @@ body {
     }
 
     .es-research {
+      padding: 50px;
       .es-research--left--title {
         font-size: 35px;
       }

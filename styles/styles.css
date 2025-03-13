@@ -66,6 +66,37 @@ body {
     padding-right: 75px;
   }
 }
+#es-rc #es-rc-content .es-kv {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 25px;
+}
+#es-rc #es-rc-content .es-kv__right {
+  max-width: 400px;
+  margin-left: auto;
+}
+#es-rc #es-rc-content .es-kv__highlight {
+  background-color: #00a69a;
+  font-weight: 600;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 4px 8px;
+}
+#es-rc #es-rc-content .es-kv__heading {
+  font-size: 28px;
+  line-height: 1;
+  margin: 10px 0 20px 0;
+}
+#es-rc #es-rc-content .es-kv__heading span {
+  font-weight: 600;
+}
+#es-rc #es-rc-content .es-kv__text--big-bold {
+  font-size: 16px;
+  font-weight: 600;
+}
+#es-rc #es-rc-content .es-kv__list {
+  font-size: 13px;
+}
 #es-rc #es-rc-content .es-benefits {
   margin-top: 70px;
   text-align: center;
@@ -105,7 +136,7 @@ body {
 }
 #es-rc #es-rc-content .es-research {
   width: 100%;
-  padding: 50px;
+  padding: 25px;
   margin-top: 50px;
 }
 #es-rc #es-rc-content .es-research__wrapper {
@@ -442,6 +473,22 @@ body {
 
 /* === Medium Screens === */
 @media (min-width: 768px) {
+  #es-rc #es-rc-content .es-kv {
+    padding: 50px;
+    min-height: 300px;
+  }
+  #es-rc #es-rc-content .es-kv__highlight {
+    font-size: 18px;
+  }
+  #es-rc #es-rc-content .es-kv__heading {
+    font-size: 50px;
+  }
+  #es-rc #es-rc-content .es-kv__text--big-bold {
+    font-size: 25px;
+  }
+  #es-rc #es-rc-content .es-kv__list {
+    font-size: 20px;
+  }
   #es-rc #es-rc-content .es-benefits .es-benefits__title {
     font-size: 40px;
   }
@@ -451,6 +498,9 @@ body {
   }
   #es-rc #es-rc-content .es-benefits .es-benefits__list .es-benefits__single {
     max-width: 31%;
+  }
+  #es-rc #es-rc-content .es-research {
+    padding: 50px;
   }
   #es-rc #es-rc-content .es-research .es-research--left--title {
     font-size: 35px;
