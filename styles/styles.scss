@@ -50,6 +50,18 @@ body {
       text-transform: uppercase;
     }
 
+    .es-white-text {
+      color: $es-color_1;
+    }
+
+    .es-accent-text {
+      color: $es-color_4;
+    }
+
+    .es-small-text {
+      font-size: 25px;
+    }
+
     .swiper-button-prev,
     .swiper-button-next {
       color: $es-color_2;
@@ -81,7 +93,7 @@ body {
       font-size: 30px;
       text-transform: uppercase;
       text-align: center;
-      line-height: 1;
+      line-height: 1.14;
       margin-block: 50px;
       word-break: break-word;
       -webkit-hyphens: auto;
@@ -97,7 +109,6 @@ body {
         font-size: 35px;
       }
     }
-
 
     .es-logos {
       display: flex;
@@ -220,6 +231,46 @@ body {
       }
     }
 
+    .es-effects {
+      &__wrapper {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      &__single {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      &__name {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+
+        span {
+          font-weight: 400;
+          display: block;
+        }
+      }
+
+      &__text {
+        font-size: 18px;
+        font-weight: 800;
+
+        &--upper {
+          text-transform: uppercase;
+          font-weight: 800;
+        }
+      }
+
+      &__number {
+        font-size: 36px;
+      }
+    }
 
     .es-research {
       width: 100%;
@@ -470,13 +521,7 @@ body {
       }
     }
 
-    .es-white-text {
-      color: $es-color_1;
-    }
 
-    .es-small-text {
-      font-size: 25px;
-    }
 
     .es-table {
       display: none;
@@ -645,7 +690,24 @@ body {
   }
 }
 
+@media (min-width: 576px) {
+  #es-rc #es-rc-content {
+    .es-effects {
+      &__wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+        gap: 24px;
+        justify-content: flex-end;
+      }
 
+      &__single {
+        width: 45%;
+        max-width: 250px;
+      }
+    }
+  }
+}
 
 
 /* === Medium Screens === */
@@ -690,11 +752,38 @@ body {
       &__wrapper {
         padding: 50px;
       }
+
       &__text {
         font-size: 16px;
       }
+
       &__text--bold {
         font-size: 24px;
+      }
+    }
+
+    .es-effects {
+      &__wrapper {
+        max-width: calc($max-width * 2 / 3);
+        padding: 50px;
+        aspect-ratio: 3/1;
+      }
+
+      &__single {
+        width: 48%;
+        max-width: unset;
+      }
+
+      &__name {
+        font-size: 18px;
+      }
+
+      &__text {
+        font-size: 25px;
+      }
+
+      &__number {
+        font-size: 70px;
       }
     }
 
