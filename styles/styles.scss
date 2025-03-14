@@ -17,7 +17,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
@@ -85,7 +85,7 @@ body {
       margin-bottom: 15px;
 
       @media (min-width: 768px) {
-        font-size: 40px;
+        font-size: 35px;
       }
     }
 
@@ -104,10 +104,6 @@ body {
       span {
         font-weight: 900;
       }
-
-      @media (min-width: 768px) {
-        font-size: 35px;
-      }
     }
 
     .es-logos {
@@ -125,10 +121,10 @@ body {
         max-height: 60px;
       }
 
-      @media (min-width: 730px) {
+      @media (min-width: 768px) {
         justify-content: flex-end;
-        gap: 75px;
-        padding-right: 75px;
+        gap: 55px;
+        padding-right: 60px;
       }
     }
 
@@ -138,7 +134,7 @@ body {
       padding: 25px;
 
       &__right {
-        max-width: calc($max-width / 3);
+        max-width: calc($max-width / 3.5);
         margin-left: auto;
       }
 
@@ -213,9 +209,9 @@ body {
 
       &__single {
         display: grid;
-        grid-template-columns: 60px auto;
+        grid-template-columns: 70px auto;
         gap: 20px;
-        max-width: calc($max-width / 1.8);
+        max-width: calc($max-width / 2);
       }
 
       &__text {
@@ -223,6 +219,7 @@ body {
         flex-direction: column;
         gap: 10px;
         font-size: 14px;
+        text-wrap: balance;
       }
 
       &__text--bold {
@@ -279,7 +276,7 @@ body {
 
       &__wrapper {
         width: 100%;
-        max-width: 600px;
+        max-width: 580px;
         color: $es-color_1;
       }
 
@@ -295,7 +292,7 @@ body {
 
       &__list {
         margin-block: 24px;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.3;
       }
 
@@ -305,7 +302,7 @@ body {
       }
 
       &__text {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
 
@@ -327,7 +324,7 @@ body {
       display: flex;
       flex-flow: column;
       margin: 15px auto;
-      width: 200px;
+      width: 160px;
       transition: transform 0.6s;
 
       &:hover {
@@ -356,7 +353,7 @@ body {
 
       &--text {
         padding-left: 5px;
-        font-size: 14px;
+        font-size: 12px;
       }
 
       &--link {
@@ -521,8 +518,6 @@ body {
       }
     }
 
-
-
     .es-table {
       display: none;
     }
@@ -548,7 +543,7 @@ body {
       width: 32.5%;
 
       p {
-        margin-bottom: 25px;
+        margin-bottom: 18px;
         font-size: 16px;
         line-height: 1.4;
       }
@@ -706,6 +701,12 @@ body {
         max-width: 250px;
       }
     }
+
+    .es-formula {
+      &__single {
+        width: 80%;
+      }
+    }
   }
 }
 
@@ -716,62 +717,72 @@ body {
   #es-rc #es-rc-content {
 
     .es-kv {
-      padding: 50px;
-      min-height: 300px;
 
       &__highlight {
-        font-size: 18px;
+        font-size: 16px;
       }
 
       &__heading {
-        font-size: 50px;
+        font-size: 36px;
       }
 
       &__text--big-bold {
-        font-size: 25px;
+        font-size: 22px;
+        text-wrap: balance;
       }
 
       &__list {
-        font-size: 20px;
+        font-size: 18px;
+        padding-inline-start: 20px;
       }
     }
 
     .es-benefits {
 
-      .es-benefits__list {
+      &__list {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
 
-        .es-benefits__single {
-          max-width: 31%;
+      }
+
+      &__single {
+        max-width: 33%;
+
+        &--text {
+          font-size: 14px;
+          text-wrap: balance;
         }
       }
     }
 
     .es-formula {
       &__wrapper {
-        padding: 50px;
+        padding: 32px;
       }
 
       &__text {
-        font-size: 16px;
+        font-size: 14px;
       }
 
       &__text--bold {
-        font-size: 24px;
+        font-size: 22px;
+      }
+
+      &__img {
+        height: 70px;
+        width: 70px;
       }
     }
 
     .es-effects {
       &__wrapper {
-        max-width: calc($max-width * 2 / 3);
-        padding: 50px;
         aspect-ratio: 3/1;
+        padding: 40px;
       }
 
       &__single {
-        width: 48%;
-        max-width: unset;
+        width: 40%;
+        max-width: 300px;
       }
 
       &__name {
@@ -779,11 +790,11 @@ body {
       }
 
       &__text {
-        font-size: 25px;
+        font-size: 24px;
       }
 
       &__number {
-        font-size: 70px;
+        font-size: 46px;
       }
     }
 
@@ -812,7 +823,7 @@ body {
 
         .es-top__single {
           .es-top__single-text {
-            transform: translateX(-3%);
+            font-size: 16px;
           }
         }
       }
@@ -831,16 +842,30 @@ body {
 
 
 /* === Swiper toggle === */
-@media (min-width: 1181px) {
+@media (min-width: 980px) {
   #es-rc {
     #es-rc-content {
-      .es-products__container {
-        gap: unset;
+      .es-products {
+        &__container {
+          gap: unset;
+
+          & a:nth-child(1) img {
+            height: 300px;
+          }
+
+          & a:nth-child(2) img {
+            height: 300px;
+          }
+
+          & a:nth-child(3) img {
+            height: 250px;
+          }
+        }
       }
 
       .es-products__single {
         width: 32.5%;
-        height: 480px;
+        height: 400px;
         margin: 0;
 
         justify-content: flex-end;
@@ -858,9 +883,9 @@ body {
         .es-products__single--text {
           margin: unset;
           max-width: unset;
-          width: 480px;
+          width: 400px;
           height: 230px;
-          transform: rotate(-90deg) translate(-26%, 15%);
+          transform: rotate(-90deg) translate(-21%, -7%);
           transform-origin: center;
           position: absolute;
           right: 0;
@@ -872,15 +897,15 @@ body {
           align-items: flex-end;
 
           &--1 {
-            font-size: 46px;
+            font-size: 44px;
           }
 
           &--2 {
-            font-size: 38px;
+            font-size: 24px;
           }
 
           &--3 {
-            font-size: 28px;
+            font-size: 24px;
           }
         }
       }
