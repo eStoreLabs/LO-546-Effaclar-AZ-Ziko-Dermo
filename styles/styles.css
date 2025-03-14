@@ -598,20 +598,25 @@ body {
   }
   #es-rc #es-rc-content .es-effects__wrapper {
     aspect-ratio: 3/1;
-    padding: 40px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: max-content auto;
   }
   #es-rc #es-rc-content .es-effects__single {
-    width: 40%;
-    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin: auto;
   }
   #es-rc #es-rc-content .es-effects__name {
-    font-size: 18px;
+    font-size: 16px;
   }
   #es-rc #es-rc-content .es-effects__text {
     font-size: 24px;
   }
   #es-rc #es-rc-content .es-effects__number {
-    font-size: 46px;
+    font-size: 52px;
   }
   #es-rc #es-rc-content .es-research {
     padding: 50px;
