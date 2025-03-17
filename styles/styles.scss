@@ -85,12 +85,12 @@ body {
       margin-bottom: 15px;
 
       @media (min-width: 768px) {
-        font-size: 35px;
+        font-size: 32px;
       }
     }
 
     .es-section-title--smaller {
-      font-size: 30px;
+      font-size: 28px;
       text-transform: uppercase;
       text-align: center;
       line-height: 1.14;
@@ -266,6 +266,11 @@ body {
 
       &__number {
         font-size: 36px;
+      }
+
+      &__percent {
+        vertical-align: top;
+        font-size: 32px;
       }
     }
 
@@ -524,7 +529,7 @@ body {
 
     .es-table__title {
       font-weight: 900;
-      font-size: 30px;
+      font-size: 22px;
       color: $es-color_2;
       text-align: center;
       text-transform: uppercase;
@@ -539,17 +544,26 @@ body {
     .es-table__single {
       text-align: center;
       background-color: $es-background-color_5;
-      padding: 25px;
+      padding: 14px;
       width: 32.5%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
 
       p {
-        margin-bottom: 18px;
-        font-size: 16px;
+        margin-bottom: 0;
+        font-size: 12px;
         line-height: 1.4;
       }
 
       .es-bold {
         font-weight: 700;
+      }
+
+      .es-table__margin {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
       }
     }
 
@@ -747,6 +761,7 @@ body {
 
       &__single {
         max-width: 33%;
+        flex: 1 1 0;
 
         &--text {
           font-size: 14px;
@@ -765,7 +780,7 @@ body {
       }
 
       &__text--bold {
-        font-size: 22px;
+        font-size: 20px;
       }
 
       &__img {
@@ -779,7 +794,9 @@ body {
         aspect-ratio: 3/1;
         padding: 25px;
         display: grid;
-        grid-template-columns: max-content auto;
+        grid-template-columns: 1fr 1fr;
+        max-width: 72%;
+        column-gap: 0;
       }
 
       &__single {
@@ -790,7 +807,7 @@ body {
       }
 
       &__name {
-        font-size: 16px;
+        font-size: 15px;
       }
 
       &__text {

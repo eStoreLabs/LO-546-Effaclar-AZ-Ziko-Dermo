@@ -63,11 +63,11 @@ body {
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-section-title {
-    font-size: 35px;
+    font-size: 32px;
   }
 }
 #es-rc #es-rc-content .es-section-title--smaller {
-  font-size: 30px;
+  font-size: 28px;
   text-transform: uppercase;
   text-align: center;
   line-height: 1.14;
@@ -212,6 +212,10 @@ body {
 }
 #es-rc #es-rc-content .es-effects__number {
   font-size: 36px;
+}
+#es-rc #es-rc-content .es-effects__percent {
+  vertical-align: top;
+  font-size: 32px;
 }
 #es-rc #es-rc-content .es-research {
   width: 100%;
@@ -412,7 +416,7 @@ body {
 }
 #es-rc #es-rc-content .es-table__title {
   font-weight: 900;
-  font-size: 30px;
+  font-size: 22px;
   color: #007470;
   text-align: center;
   text-transform: uppercase;
@@ -425,16 +429,24 @@ body {
 #es-rc #es-rc-content .es-table__single {
   text-align: center;
   background-color: #F2F2F2;
-  padding: 25px;
+  padding: 14px;
   width: 32.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 #es-rc #es-rc-content .es-table__single p {
-  margin-bottom: 18px;
-  font-size: 16px;
+  margin-bottom: 0;
+  font-size: 12px;
   line-height: 1.4;
 }
 #es-rc #es-rc-content .es-table__single .es-bold {
   font-weight: 700;
+}
+#es-rc #es-rc-content .es-table__single .es-table__margin {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 #es-rc #es-rc-content .es-table-mobile .es-table__single {
   width: 100%;
@@ -578,6 +590,7 @@ body {
   }
   #es-rc #es-rc-content .es-benefits__single {
     max-width: 33%;
+    flex: 1 1 0;
   }
   #es-rc #es-rc-content .es-benefits__single--text {
     font-size: 14px;
@@ -590,7 +603,7 @@ body {
     font-size: 14px;
   }
   #es-rc #es-rc-content .es-formula__text--bold {
-    font-size: 22px;
+    font-size: 20px;
   }
   #es-rc #es-rc-content .es-formula__img {
     height: 70px;
@@ -600,7 +613,10 @@ body {
     aspect-ratio: 3/1;
     padding: 25px;
     display: grid;
-    grid-template-columns: max-content auto;
+    grid-template-columns: 1fr 1fr;
+    max-width: 72%;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
   #es-rc #es-rc-content .es-effects__single {
     width: 100%;
@@ -610,7 +626,7 @@ body {
     margin: auto;
   }
   #es-rc #es-rc-content .es-effects__name {
-    font-size: 16px;
+    font-size: 15px;
   }
   #es-rc #es-rc-content .es-effects__text {
     font-size: 24px;
