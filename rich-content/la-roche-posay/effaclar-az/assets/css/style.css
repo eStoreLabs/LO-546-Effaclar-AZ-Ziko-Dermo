@@ -183,6 +183,11 @@
   font-weight: 900;
   font-size: 18px;
 }
+#es-rc #es-rc-content .es-effects__wrapper--outer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
 #es-rc #es-rc-content .es-effects__wrapper {
   padding: 25px;
   display: flex;
@@ -611,6 +616,9 @@
   }
   #es-rc #es-rc-content .es-formula__single {
     width: 80%;
+  }
+  #es-rc #es-rc-content .es-effects__wrapper--outer {
+    background-position: 10%;
   }
   #es-rc #es-rc-content .es-effects__wrapper {
     margin-left: auto;
